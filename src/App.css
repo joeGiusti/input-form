@@ -187,6 +187,7 @@ button {
   display: inline-block;  
   cursor: pointer;  
   position: relative;
+
 }
 .submissionTile:hover{
   vertical-align: top;
@@ -199,6 +200,7 @@ button {
 .submissionTile img{
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .submissionTileInfo{
   position: absolute;
@@ -219,13 +221,20 @@ button {
   height: 90%;
   width: 90%;
   top: 5%;
-  left: 5%;
+  left: 5%;  
+  resize: both;
+  overflow: auto;
 }
-.tileView img{  
-  height: 50%;
+.tileViewImage{  
+  width: 50%;
   margin: 10px;
   object-fit: cover;
-  float: left;
+  float: left;  
+  resize: both;
+  overflow: auto;
+}
+.tileViewImage img{
+  width: 100%;  
 }
 .tileViewData{
   margin-top: 30px;
