@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/input-form/static/css/main.2f509365.css",
-    "main.js": "/input-form/static/js/main.6ec3cfa0.js",
+    "main.css": "/input-form/static/css/main.49cc97b2.css",
+    "main.js": "/input-form/static/js/main.0c33d48e.js",
     "static/js/787.34e3f2d5.chunk.js": "/input-form/static/js/787.34e3f2d5.chunk.js",
     "static/media/userCircleIcon120px075opacity.png": "/input-form/static/media/userCircleIcon120px075opacity.c095bc23c1a94d69a825.png",
     "static/media/newImageIconScaledPadding.png": "/input-form/static/media/newImageIconScaledPadding.a8d95cfac23894627467.png",
     "index.html": "/input-form/index.html",
-    "main.2f509365.css.map": "/input-form/static/css/main.2f509365.css.map",
-    "main.6ec3cfa0.js.map": "/input-form/static/js/main.6ec3cfa0.js.map",
+    "main.49cc97b2.css.map": "/input-form/static/css/main.49cc97b2.css.map",
+    "main.0c33d48e.js.map": "/input-form/static/js/main.0c33d48e.js.map",
     "787.34e3f2d5.chunk.js.map": "/input-form/static/js/787.34e3f2d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f509365.css",
-    "static/js/main.6ec3cfa0.js"
+    "static/css/main.49cc97b2.css",
+    "static/js/main.0c33d48e.js"
   ]
 }
