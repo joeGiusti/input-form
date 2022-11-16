@@ -4,53 +4,74 @@ import InputForm from './Pages/InputForm';
 import { initializeApp } from 'firebase/app';
 import {DataSnapshot, getDatabase, refFromURL, onValue, ref as dbRef} from 'firebase/database'
 import {getStorage} from 'firebase/storage'
-import Complete from './Pages/Complete';
+import Complete from './Components/Complete';
 import Auth from './Components/Auth';
 import userCircle from './Images/userCircleIcon120px075opacity.png'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Admin from './Pages/Admin';
 
 /*
-Steps
+  Steps
 
-done
-Create app
-
-done
-Create input form
-
-done
-Create input form functionality
   done
-  image selection
-  done
-  upload after typing duration
-  done
-  firebase setup 
-  done
-  image upload
-  done
-  text upload  
+  Create app
 
-done
-completed form page
-
-new submission option functionality 
-  can clear the cached data and bring back to input form
-  if already input form can also refresh it
-  have a confirmation popup though if already in the input form page
-
-create account / login options
   done
-  create popup window
-  functionality 
-    create account, put data under userID/submissions/submissionID
-  when logged in they have option to log out or view submissions
+  Create input form
 
-View form submissions page
-  when logged in and admin property is true show this page  
+  done
+  Create input form functionality
+    done
+    image selection
+    done
+    upload after typing duration
+    done
+    firebase setup 
+    done
+    image upload
+    done
+    text upload  
 
-phone media styling
+  done
+  completed form page
+
+  done
+  new submission option functionality 
+    can clear the cached data and bring back to input form
+    if already input form can also refresh it
+    have a confirmation popup though if already in the input form page
+    
+  create account / login options
+    done
+    create popup window
+    done
+    functionality 
+      done
+      create account
+      done
+      view all forms when admin
+      put data under userID/submissions/submissionID
+      when logged in they have option to:
+        done
+        log out
+        view their submissions (even as non admin)
+
+  done
+  View form submissions page
+    when logged in and admin property is true show this page  
+
+  phone media styling
+
+  move the complete dialogue to a component over the input instead of a seperate page so the 
+    new submission button 
+
+  cleanup
+    login option tries to log in else makes it only show one password line
+
+  misc additional stuff
+    reset password
+    change email
+    account info such as name etc
 
 */
 
@@ -117,9 +138,9 @@ function App() {
 
   function Page(){
     if(page == "Input")
-      return <InputForm firebase={firebase} togglePage={togglePage}></InputForm>
+      return <InputForm firebase={firebase} setPage={setPage} setShowAuth={setShowAuth}></InputForm>
     if(page == "Complete")
-      return <Complete  togglePage={togglePage}></Complete>
+      return <Complete setPage={setPage} userId={userId} setShowAuth={setShowAuth}></Complete>
     if(page == "Admin")
       return <Admin firebase={firebase}></Admin>
   }  

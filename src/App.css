@@ -28,6 +28,9 @@ body{
   height: 250px;
   min-width: 400px;
   width: 60%;
+  position: fixed;
+  left: calc(50% - 30%);
+  top: calc(50% - 125px);  
 }
 .topBox{
   height: 250px;
@@ -162,8 +165,9 @@ button {
   border-radius: 5px;
   box-shadow: 0 0 10px gray;
   left: calc(50% - 200px);
-  top: calc(50% - 100px);
+  top: calc(50% - 200px);
   padding: 30px 10px 10px 10px;  
+  z-index: 2;
 }
 .bottom{
   position: absolute;
@@ -195,7 +199,7 @@ button {
   height: 205px;
   margin: 18px;
   box-shadow: 0 2px 16px gray;
-  background-image: linear-gradient(rgba(128, 128, 128, 0),rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.2));
+  background-image: linear-gradient(rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.2));
 }
 .submissionTile img{
   height: 100%;
